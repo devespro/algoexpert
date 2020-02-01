@@ -8,3 +8,5 @@ AE#2: Binary Search Tree - brunch sum
 AE#3: binary search (iterative and recursive)
 
 AE#4: implemented three versions of a fibonacci algorithm
+
+AE#5: sum finder in an array
