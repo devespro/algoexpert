@@ -1,19 +1,17 @@
-function caesarCipherEncryptor(string, key) {
-    const actualKey = key % 26;
-    let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-    let result = '';
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
+function caesarCipherEncryptor(string, key) {
+    let encrypted = '';
     for (let letter of string) {
-        result += getCipherLetter(letter, actualKey, alphabet);
+        encrypted += getCipherLetter(letter, key);
     }
 
-    return result;
+    return encrypted;
 }
 
-function getCipherLetter(letter, key, alphabet) {
-    let newLetterCode = alphabet.indexOf(letter) + key;
-    return alphabet[newLetterCode % alphabet.length];
+function getCipherLetter(letter, key) {
+    let newLetterIndex = alphabet.indexOf(letter) + key;
+    return alphabet[newLetterIndex % alphabet.length];
 }
 
-// Do not edit the line below.
 exports.caesarCipherEncryptor = caesarCipherEncryptor;
