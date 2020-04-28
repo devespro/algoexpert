@@ -1,8 +1,9 @@
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
-function caesarCipherEncryptor(string, key) {
+function caesarCipherEncryptor(value, key) {
+    const lowercaseValue = value.toLowerCase();
     let encrypted = '';
-    for (let letter of string) {
+    for (let letter of lowercaseValue) {
         encrypted += getCipherLetter(letter, key);
     }
 
