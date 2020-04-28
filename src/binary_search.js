@@ -10,12 +10,15 @@ function binarySearchRecursive(array, target) {
         return findNumberIndex;
     }
 
-    let middleNumber = Math.floor(array.length / 2);
-
-    if (middleNumber < target) {
-        return binarySearchRecursive(array.slice(0, middleNumber),target);
+    let lastIndex = array.length -1;
+    let middleIndex = Math.floor((lastIndex)  / 2);
+    let potentialMatch = array[middleIndex];
+    if (potentialMatch === target) {
+        return middleIndex;
+    } else if (potentialMatch > target) {
+        return binarySearchRecursive(array.slice(0, middleIndex), target);
     } else {
-        return binarySearchRecursive(array.slice(0, middleNumber), target);
+        return binarySearchRecursive(array.slice(middleIndex + 1, lastIndex), target);
     }
 }
 
