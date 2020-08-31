@@ -79,7 +79,6 @@ describe('Fibonacci tests', () => {
             chai.assert.equal(fibonacci.getNthFibonacciRecursive(18), 1597);
         });
     });
-
     describe('recursive version with caching', () => {
         it('should return 0 for input 1', () => {
             chai.assert.equal(fibonacci.getNthFibonacciRecursiveWithCache(1), 0);
