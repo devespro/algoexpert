@@ -1,4 +1,4 @@
-const program = require('../src/bst-depths');
+const program = require('../src/bst_depths');
 const chai = require('chai');
 
 describe('BST depth sum tests', () => {

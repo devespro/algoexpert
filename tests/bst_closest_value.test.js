@@ -1,5 +1,5 @@
 
-const bstProgram = require('../src/bst-closest-value');
+const bstProgram = require('../src/bst_closest_value');
 const chai = require('chai');
 
 

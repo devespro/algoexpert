@@ -1,4 +1,4 @@
-const program = require('../src/three-largest-numbers');
+const program = require('../src/three_largest_numbers');
 const chai = require('chai');
 
 describe('Three largest numbers in an array tests', () => {
