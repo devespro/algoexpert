@@ -13,7 +13,7 @@
   "devDependencies": {
     "chai": "*",
     "lodash": ">=4.17.19",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.6",
     "mocha": "^8.1.3"
   }
 }
